@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   width: 100%;
@@ -46,4 +46,53 @@ p {
 p,
 h3 {
   text-align: center;
+} */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: hsl(212, 45%, 89%);
+}
+
+.cards {
+  height: 410px; /* Fixed height */
+  width: 260px; /* Fixed width */
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box; /* Include padding in dimensions */
+}
+
+.card img {
+  width: 100%; /* Image fills container */
+  height: auto;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+h3 {
+
+  margin: 0 0 15px 0;
+  color: hsl(218, 44%, 22%);
+}
+
+p {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  margin: 0;
 }
